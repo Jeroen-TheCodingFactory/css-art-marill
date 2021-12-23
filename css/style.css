@@ -58,7 +58,29 @@ body{
     position:absolute;
     top:20%;
     border-radius: 50%;
-    overflow: hidden;
+    border: 0.2rem solid var(--marill-blue);
+ 
+}
+
+.marill__eye::after{
+    content:"";
+    width:105%;
+    height:105%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background: var(--marill-blue);
+    border: 0.2rem solid var(--marill-blue);
+    border-bottom: var(--marill-border);
+    border-radius: 50%;
+    transform:translate(-50%, -50%) scaleY(1);
+    transition: 0.2s transform;
+    transform-origin: top center;
+}
+
+.marill:hover .marill__eye::after{
+    transform:translate(-50%, -50%) scaleY(0);
+
 }
 
 .marill__eye--left{
@@ -110,8 +132,7 @@ body{
 
 }
 
-
-.marill__ear--left::after, .marill__ear--right::after{
+.marill__ear::after{
     content:"";
     width:90%;
     height:90%;
@@ -123,14 +144,6 @@ body{
     left:50%;
     transform:translateX(-50%);
 
-}
-
-.marill__ear--left::after{
-
-}
-
-.marill__ear--right::after{
-   
 }
 
 .marill__nose{
@@ -172,6 +185,7 @@ body{
     left:50%;
     transform:translateX(-50%);
     top:25.5%;
+    -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
     background: var(--marill-red);
     overflow: hidden;
