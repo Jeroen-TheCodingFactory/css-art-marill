@@ -33,10 +33,10 @@ body{
 
 .marill__label{
     position:absolute;
-    top:40%;
+    top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    width:250%;
+    width:100%;
     height:120%;
     z-index: 6;
 }
@@ -247,7 +247,6 @@ body{
     background:var(--marill-black);
     position: absolute;
     border-radius: 50px;
-    visibility: hidden;
 }
 
 .marill__tailStripe--first{
@@ -292,16 +291,31 @@ body{
     left:142%;
     background:var(--marill-blue);
     border: var(--marill-border);
-    visibility: hidden;
+}
+
+/* for mobile */
+.marill__tailStripe, .marill__tail{
+    display:none;
 }
 
 /* animation classes with there animation */
 .a-popup{
-    animation-name: pofpup;
+    animation-name: popup;
     animation-duration: 0.8s;
 }
 
 @keyframes popup {
+    from{
+        opacity:0;
+        transform: translateY(20px) scale(0.6);  
+    }
+    to{
+        opacity:1;
+        transform: translateY(0) scale(0.6); 
+    }
+}
+
+@keyframes popup--desktop {
     from{
         opacity:0;
         transform: translateY(20px);  
@@ -310,8 +324,8 @@ body{
         opacity:1;
         transform: translateY(0);
     }
-    
 }
+
 
 /* utilities */
 
@@ -325,7 +339,19 @@ body{
     .marill{
         transform:scale(1);
     }
+
     .marill__tailStripe, .marill__tail{
-        visibility:visible ;
+        display:block;
+    }
+
+    .marill__label{
+        top:40%;
+        transform: translate(-50%,-50%);
+        width:250%;
+        height:120%;
+        z-index: 6;
+    }
+    .a-popup{
+        animation-name: popup--desktop;
     }
 }
