@@ -1,0 +1,93 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #89cff0;
+    --marill-blue: #4DB6E8;
+    --marill-red: #D15E47;
+    --marill-white: #E5F0E0;
+    --marill-border: 0.2rem solid black;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height:100vh;
+    background:var(--background-color);
+}
+
+.marill{
+
+}
+
+.marill__body{
+    width:40rem;
+    height:43rem;
+    background:var(--marill-blue);
+    border-radius: 50%;
+    border: var(--marill-border);
+    border-bottom-left-radius: 48%;
+    border-bottom-right-radius: 48%;
+    position:relative;
+    overflow: hidden;
+}
+
+.marill__belly{
+    height:80%;
+    width:100%;
+    position:absolute;
+    background:var(--marill-white);
+    top:40%;
+    left:50%;
+    border-radius:50%;
+    transform: translateX(-50%);
+    border: var(--marill-border);
+    filter: blur(x);
+}
+
+.marill__eye{
+    width:4rem;
+    height:4rem;
+    background:black;
+    position:absolute;
+    top:20%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.marill__eye--left{
+    left:25%;
+}
+
+.marill__eye--right{
+    right:25%;
+}
+
+.marill__pupil{
+    width:45%;
+    height: 45%;
+    background:white;
+    border-radius: 50%;
+    position:absolute;
+    top:9%;
+}
+
+.marill__pupil--left{
+    left:37%;
+}
+
+.marill__pupil--right{
+    right:37%;
+}
+
+
+.u-flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
