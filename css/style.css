@@ -10,7 +10,9 @@
     --marill-red: #EA535E;
     --marill-white: #E5F0E0;
     --marill-tongue-color: #D9B0C5;
-    --marill-border: 0.2rem solid black;
+    --marill-black: black;
+    --marill-white: white;
+    --marill-border: 0.2rem solid var(--marill-black);
 }
 
 html{
@@ -75,12 +77,11 @@ body{
 .marill__eye{
     width:4rem;
     height:4rem;
-    background:black;
+    background:var(--marill-black);
     position:absolute;
     top:20%;
     border-radius: 50%;
     border: 0.2rem solid var(--marill-blue);
- 
 }
 
 .marill__eye::after{
@@ -114,7 +115,7 @@ body{
 .marill__pupil{
     width:45%;
     height: 45%;
-    background:white;
+    background:var(--marill-white);
     border-radius: 50%;
     position:absolute;
     top:9%;
@@ -156,7 +157,6 @@ body{
     content:"";
     width:90%;
     height:90%;
-    background:var(--marill-red);
     position:absolute;
     border-radius:50%;
     border: var(--marill-border);
@@ -172,7 +172,7 @@ body{
     position:absolute;
     top:27%;
     left:50%;
-    background:black;
+    background:var(--marill-black);
     border-radius: 50%;
     transform:translateX(-50%);
 }
@@ -190,7 +190,7 @@ body{
     transform: translateX(-50%);
     border-radius: 50%;
     border: 0.5rem solid transparent;
-    border-bottom:0.2rem solid black;
+    border-bottom:var(--marill-border);
     top:27%;
     left:50%;
     z-index: 1;
@@ -231,15 +231,15 @@ body{
 .marill__tailStripe{
     width:10rem;
     height:1rem;
-    background:black;
+    background:var(--marill-black);
     position: absolute;
+    border-radius: 50px;
 }
 
 .marill__tailStripe--first{
     right:-8%;
     top:80%;
     transform:rotate(-20deg);
-    border-radius: 50px;
 }
 
 .marill__tailStripe--second{
@@ -247,14 +247,12 @@ body{
     width:6rem;
     top:79%;
     transform:rotate(25deg);
-    border-radius:50px;
 }
 
 .marill__tailStripe--third{
     right:-35%;
     top:72%;
     transform:rotate(-60deg);
-    border-radius:50px;
 }
 
 .marill__tailStripe--fourth{
@@ -262,14 +260,12 @@ body{
     top:69%;
     width:6rem;
     transform:rotate(70deg);
-    border-radius: 50px;
 }
 
 .marill__tailStripe--fifth{
     right:-53%;
     top: 67%;
     transform:rotate(-45deg);
-    border-radius: 50px;
 }
 
 .marill__tail{
@@ -283,6 +279,7 @@ body{
     background:var(--marill-blue);
     border: var(--marill-border);
 }
+
 .u-flex-center{
     display:flex;
     justify-content: center;
