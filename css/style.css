@@ -183,12 +183,17 @@ body{
     border: var(--marill-border);
     border-radius: 50%;
     left:50%;
-    transform:translateX(-50%);
+    transform:translateX(-50%) scaleY(0);
     top:25.5%;
     -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
     background: var(--marill-red);
     overflow: hidden;
+    transition:0.2s transform;
+}
+
+.marill:hover .marill__oval{
+    transform:translateX(-50%) scaleY(1);
 }
 
 .marill__tongue{
