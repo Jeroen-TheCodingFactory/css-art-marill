@@ -33,9 +33,13 @@ body{
     top:40%;
     left:50%;
     transform: translate(-50%,-50%);
-    width:150%;
+    width:250%;
     height:120%;
-    z-index: 3;
+    z-index: 6;
+}
+
+.marill__label:hover{
+    cursor:pointer;
 }
 
 .marill__checkbox{
@@ -163,7 +167,7 @@ body{
     top:20%;
     left:50%;
     transform:translateX(-50%);
-
+    background: var(--marill-red);
 }
 
 .marill__nose{
@@ -279,6 +283,26 @@ body{
     background:var(--marill-blue);
     border: var(--marill-border);
 }
+
+/* animation classes with there animation */
+.a-popup{
+    animation-name: popup;
+    animation-duration: 0.8s;
+}
+
+@keyframes popup {
+    from{
+        opacity:0;
+        transform: translateY(20px);  
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+    
+}
+
+/* utilities */
 
 .u-flex-center{
     display:flex;
