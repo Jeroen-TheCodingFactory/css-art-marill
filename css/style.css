@@ -56,6 +56,7 @@ body{
     border-bottom-right-radius: 48%;
     position:relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .marill__belly{
@@ -225,9 +226,63 @@ body{
    bottom:-10%;
    left:50%;
    transform:translateX(-50%);
-
 }
 
+.marill__tailStripe{
+    width:10rem;
+    height:1rem;
+    background:black;
+    position: absolute;
+}
+
+.marill__tailStripe--first{
+    right:-8%;
+    top:80%;
+    transform:rotate(-20deg);
+    border-radius: 50px;
+}
+
+.marill__tailStripe--second{
+    right:-19%;
+    width:6rem;
+    top:79%;
+    transform:rotate(25deg);
+    border-radius:50px;
+}
+
+.marill__tailStripe--third{
+    right:-35%;
+    top:72%;
+    transform:rotate(-60deg);
+    border-radius:50px;
+}
+
+.marill__tailStripe--fourth{
+    right:-38%;
+    top:69%;
+    width:6rem;
+    transform:rotate(70deg);
+    border-radius: 50px;
+}
+
+.marill__tailStripe--fifth{
+    right:-53%;
+    top: 67%;
+    transform:rotate(-45deg);
+    border-radius: 50px;
+}
+
+.marill__tail{
+    position:absolute;
+    width: 15rem;
+    height:15rem;
+    border-radius: 50%;
+    top:30%;
+    z-index: 5;
+    left:142%;
+    background:var(--marill-blue);
+    border: var(--marill-border);
+}
 .u-flex-center{
     display:flex;
     justify-content: center;
