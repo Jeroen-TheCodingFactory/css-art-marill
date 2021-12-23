@@ -6,3 +6,4 @@
 ### Resources
 1. Site gebruik voor informatie en inspiratie voor en over Marill => https://bulbapedia.bulbagarden.net/wiki/Marill_(Pok%C3%A9mon) 
 2. Site gebruikt voor het vinden van andere tinten van Marill zijn/haar blauwe kleur => https://www.0to255.com/4db6e8 
+3. Geluid van Maril zijn/haar cry => https://pokemon.fandom.com/wiki/Hoenn_Pok%C3%A9dex# 
