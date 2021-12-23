@@ -26,6 +26,26 @@ body{
     position:relative;
 }
 
+.marill__label{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:150%;
+    height:120%;
+    z-index: 3;
+}
+
+.marill__checkbox{
+    -webkit-appearance: none;
+    appearance: none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+}
+
 .marill__body{
     width:41rem;
     height:42rem;
@@ -78,9 +98,8 @@ body{
     transform-origin: top center;
 }
 
-.marill:hover .marill__eye::after{
+.marill__checkbox:checked ~ .marill__body .marill__eye::after{
     transform:translate(-50%, -50%) scaleY(0);
-
 }
 
 .marill__eye--left{
@@ -192,7 +211,8 @@ body{
     transition:0.2s transform;
 }
 
-.marill:hover .marill__oval{
+.marill__checkbox:checked ~ .marill__body .marill__oval{
+    transition-delay: 0.05s;
     transform:translateX(-50%) scaleY(1);
 }
 
