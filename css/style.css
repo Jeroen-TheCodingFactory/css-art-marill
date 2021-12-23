@@ -22,7 +22,7 @@ body{
 }
 
 .marill{
-
+    position:relative;
 }
 
 .marill__body{
@@ -39,10 +39,10 @@ body{
 
 .marill__belly{
     height:80%;
-    width:100%;
+    width:95%;
     position:absolute;
     background:var(--marill-white);
-    top:40%;
+    top:37%;
     left:50%;
     border-radius:50%;
     transform: translateX(-50%);
@@ -85,6 +85,49 @@ body{
     right:37%;
 }
 
+.marill__ear{
+    position:absolute;
+    width:22rem;
+    height:23rem;
+    background:var(--marill-blue);
+    border-radius: 50%;
+    top:-20%;
+    border: var(--marill-border);
+    z-index: -1;
+    overflow:hidden;
+}
+
+.marill__ear--left{
+    left:-20%;
+}
+
+.marill__ear--right{
+    right:-20%;
+}
+
+
+.marill__ear--left::after, .marill__ear--right::after{
+    content:"";
+    width:80%;
+    height:90%;
+    background:var(--marill-red);
+    position:absolute;
+    border-radius:50%;
+    border: var(--marill-border);
+    top:20%;
+    border: var(--marill-border);
+}
+
+.marill__ear--left::after{
+    left:0%;
+    transform:rotate(50deg);
+}
+
+.marill__ear--right::after{
+    transform: rotate(-50deg);
+    right:0%;
+
+}
 
 .u-flex-center{
     display:flex;
