@@ -24,6 +24,8 @@ Marill voor de lol nagemaakt in HTML en CSS en een beetje JavaScript voor de aud
 8. Ik heb het verschil tussen <code> visibility: hidden; </code> en <code> display: none; </code> geleerd. Visibilty maakt het onzichtbaar maar het element "is er nog wel", dit betekent dat dingen niet verschuiven. De tweede property (display) wordt wanneer deze op none staat echt weggehaald (niet uit het DOM!!!). Hierdoor onstaat er ruimte voor andere properties. Kort samengevat: bij visibility wordt iets onzichtbaar gerenderd, bij display wordt het geheel niet gerenderd. 
 9. Bij zowel visibility als display worden er <strong> geen </strong> elementen uit het DOM verwijderd.
 10. Geleerd dat ik echt een "initial commit" moet maken voordat ik veel ga coderen omdat ik anders veel commits in mijn master heb i.p.v. een makkelijk feature tree. 
+11. Geleerd dat <code>overflow: hidden;</code> met een max-width en max-height problemen kan geven bij landscape orientatie.
+12. Geleerd hoe je mobile-first kan combineren met een min-height in een Mediaquery. 
  
 ## Screenshots
 Verschillende screenshots van Marill op mobile en desktop. Op desktop verdwijnt Marill zijn / haar staart. Ook is er een foto van shiny Marill toegevoegd!
