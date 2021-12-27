@@ -297,6 +297,17 @@ body{
     border: var(--marill-border);
 }
 
+.marill__shimmering{
+    position:absolute;
+    top:10%;
+    left:15%;
+    width:40%;
+    height:45%;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    transform:rotate(50deg);
+}
+
 /* for mobile */
 .marill__tailStripe, .marill__tail{
     display:none;
