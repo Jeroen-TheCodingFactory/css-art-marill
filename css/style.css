@@ -5,6 +5,7 @@
 }
 
 :root{
+    /* Colors */
     --background-color: #89cff0;
     --marill-blue: #4DB6E8;
     --marill-red: #EA535E;
@@ -12,7 +13,10 @@
     --marill-tongue-color: #D9B0C5;
     --marill-black: black;
     --marill-white: white;
+    /* Borders */
     --marill-border: 0.2rem solid var(--marill-black);
+    /* Scales */
+    --mobile-scale: 0.5;
 }
 
 html{
@@ -28,7 +32,7 @@ body{
 
 .marill{
     position:relative;
-    transform: scale(0.6);
+    transform: scale(var(--mobile-scale));
 }
 
 .marill__label{
@@ -298,7 +302,7 @@ body{
     display:none;
 }
 
-/* animation classes with there animation */
+/* animation classes with there animation / Keyframes */
 .a-popup{
     animation-name: popup;
     animation-duration: 0.8s;
@@ -307,11 +311,11 @@ body{
 @keyframes popup {
     from{
         opacity:0;
-        transform: translateY(20px) scale(0.6);  
+        transform: translateY(20px) scale(var(--mobile-scale));  
     }
     to{
         opacity:1;
-        transform: translateY(0) scale(0.6); 
+        transform: translateY(0) scale(var(--mobile-scale)); 
     }
 }
 
@@ -326,32 +330,34 @@ body{
     }
 }
 
-
-/* utilities */
-
+/* Utilities */
 .u-flex-center{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-@media screen and (min-width: 50rem){
-    .marill{
-        transform:scale(1);
-    }
+/* MediaQueries */
+@media only screen 
+        and (min-height: 50rem) 
+        and (min-width: 62.5rem){
+            
+        .marill{
+            transform:scale(1);
+        }
 
-    .marill__tailStripe, .marill__tail{
-        display:block;
-    }
+        .marill__tailStripe, .marill__tail{
+            display:block;
+        }
 
-    .marill__label{
-        top:40%;
-        transform: translate(-50%,-50%);
-        width:250%;
-        height:120%;
-        z-index: 6;
-    }
-    .a-popup{
-        animation-name: popup--desktop;
-    }
+        .marill__label{
+            top:40%;
+            transform: translate(-50%,-50%);
+            width:250%;
+            height:120%;
+            z-index: 6;
+        }
+        .a-popup{
+            animation-name: popup--desktop;
+        }
 }
