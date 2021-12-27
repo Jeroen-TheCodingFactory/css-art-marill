@@ -10,6 +10,7 @@
     --marill-blue: #4DB6E8;
     --marill-red: #EA535E;
     --marill-white: #E5F0E0;
+    --marill-white-shimmering: rgba(255,255,255,0.6);
     --marill-tongue-color: #D9B0C5;
     --marill-black: black;
     --marill-white: white;
@@ -295,6 +296,17 @@ body{
     left:142%;
     background:var(--marill-blue);
     border: var(--marill-border);
+}
+
+.marill__shimmering{
+    position:absolute;
+    top:10%;
+    left:15%;
+    width:40%;
+    height:45%;
+    background: var(--marill-white-shimmering);
+    border-radius: 50%;
+    transform:rotate(50deg);
 }
 
 /* for mobile */
