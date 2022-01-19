@@ -351,7 +351,7 @@ body{
 
 /* MediaQueries */
 @media only screen 
-        and (min-height: 50rem) 
+        and (min-height: 45rem) 
         and (min-width: 62.5rem){
             
         .marill{

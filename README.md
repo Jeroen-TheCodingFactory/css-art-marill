@@ -26,6 +26,7 @@ Marill voor de lol nagemaakt in HTML en CSS en een beetje JavaScript voor de aud
 10. Geleerd dat ik echt een "initial commit" moet maken voordat ik veel ga coderen omdat ik anders veel commits in mijn master heb i.p.v. een makkelijk feature tree. 
 11. Geleerd dat <code>overflow: hidden;</code> met een max-width en max-height problemen kan geven bij landscape orientatie.
 12. Geleerd hoe je mobile-first kan combineren met een min-height in een Mediaquery. 
+13. Geleerd dat er met min-height nog wel wat afronding verschillen kunnen in combinatie met REM. 
  
 ## Screenshots
 Verschillende screenshots van Marill op mobile en desktop. Op desktop verdwijnt Marill zijn / haar staart. Ook is er een foto van shiny Marill toegevoegd!
